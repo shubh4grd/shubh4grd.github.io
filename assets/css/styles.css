@@ -215,10 +215,19 @@ img{
 }
 .home__img{
   position: absolute;
-  right:0;
+  right:1%;
   bottom:0;
-  width: 295px;
+  padding-top: 5%;
+  width: 302px;
 }
+.home__img img{
+  transition: 1s;
+  cursor: pointer;
+}
+.home__img img:hover{
+  transform: scale(1.1);
+}
+
 
 /*BUTTONS*/
 .button{
@@ -245,8 +254,16 @@ img{
   justify-self: center;
 }
 .about__img img{
-  width: 200px;
+  width: 500px;
   border-radius: .5rem;
+  overflow: hidden;
+}
+.about__img img{
+  transition: 1s;
+  cursor: pointer;
+}
+.about__img img:hover{
+  transform: scale(1.1);
 }
 
 /* ===== SKILLS =====*/
@@ -415,7 +432,7 @@ img{
     margin-right: var(--mb-4);
   }
   .home__img{
-    width: 457px;
+    width: 420px;
     bottom: 15%;
   }
 
@@ -425,7 +442,7 @@ img{
     text-align: initial;
   }
   .about__img img{
-    width: 300px;
+    width: 500px;
   }
   .work__container{
     grid-template-columns: repeat(3, 1fr);
@@ -446,6 +463,6 @@ img{
     margin-right: auto;
   }
   .home__img{
-    right: 10%;
+    right: 5%;
   }
 }
