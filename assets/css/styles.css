@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
 :root{
-  --header-height: 3rem;
+  --header-height: 2.5rem;
   --font-semi: 600;
 }
 
@@ -59,7 +59,7 @@ body{
   color: var(--second-color);
 }
 h1,h2,p{
-  margin-top: 2%;
+  margin-top: 5%;
 }
 ul{
   margin: 0;
@@ -160,7 +160,9 @@ img{
   background-color: var(--first-color);
 }
 .nav__logo{
-  color: var(--second-color);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  color: azure;
+  font-size: 20px;
 }
 .nav__toggle{
   color: var(--second-color);
@@ -217,7 +219,8 @@ img{
   position: absolute;
   right:2%;
   bottom:1%;
-  padding-top: 10px;
+  padding-top: 0;
+  margin-top: 100%;
   width: 294px;
   overflow: hidden;
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
@@ -340,23 +343,6 @@ img{
 .skills__img:hover{
   transform: scale(1.1);
 }
-/*.about__img{
-  justify-self: center;
-  overflow: hidden;
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
-  border-radius: .5rem;
-}
-.about__img img{
-  width: 500px;
-  border-radius: .5rem;
-}
-.about__img img{
-  transition: 1s;
-  cursor: pointer;
-}
-.about__img img:hover{
-  transform: scale(1.1);
-}*/
 
 /* ===== WORK =====*/
 .work__container{
