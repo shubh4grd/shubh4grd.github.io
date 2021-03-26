@@ -248,7 +248,7 @@ img {
 }
 
 /*BUTTONS*/
-.button {
+.home__data .button {
   display: inline-block;
   background-color: var(--first-color);
   color: #d5b981;
@@ -257,7 +257,7 @@ img {
   border-radius: 0.5rem;
   margin-right: 20px;
 }
-.button:hover {
+.home__data .button:hover {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
 
@@ -361,40 +361,58 @@ img {
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
+  text-align: center;
 }
-.work__img {
-  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-.work__img img {
-  transition: 1s;
-  cursor: pointer;
-}
-.work__img img:hover {
-  transform: scale(1.1);
-}
-
-/* ===== CONTACT =====*/
-.contact__input {
+.work__container .container {
+  position: relative;
   width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
 }
 
+.work__container .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.work__container .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(left, #015d79 0%, rgb(1, 29, 41) 100%);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.work__container .container:hover .overlay {
+  height: 100%;
+}
+
+.work__container .text {
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+}
+.work__container .button {
+  background-color: var(--first-color);
+  color: #d5b981;
+  padding: 0.5rem 0.5rem;
+  font-weight: 100;
+  border-radius: 0.5rem;
+  font-size: x-small;
+  margin: 5% 2.5%;
+}
+.work__container .button:hover {
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+.projectTitle h3 {
+  background: -webkit-linear-gradient(left, #015d79 0%, rgb(1, 29, 41) 100%);
+  padding: 10px 0;
+  margin-top: 0;
+}
 /* ===== FOOTER =====*/
 .footer {
   background: -webkit-linear-gradient(left, #015d79 0%, rgb(1, 29, 41) 100%);
