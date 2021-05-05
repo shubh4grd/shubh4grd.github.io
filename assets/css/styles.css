@@ -26,6 +26,16 @@
     --normal-font-size: 1rem;
   }
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
 body {
   background: rgb(79, 145, 179);
@@ -372,20 +382,22 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
 }
 
-.projectBox{  
+.projectBox {
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
   border: 1px solid #d4d4e3;
   border-radius: 10px;
 }
 
-.projectBox:hover{
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; 
+.projectBox:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-
 
 .work__container .overlay {
   position: absolute;
@@ -397,7 +409,7 @@ img {
   width: 100%;
   height: 0;
   transition: 0.5s ease;
-  border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
 }
 
 .work__container .container:hover .overlay {
@@ -425,8 +437,8 @@ img {
 .projectTitle h3 {
   background: -webkit-linear-gradient(left, #015d79 0%, rgb(1, 29, 41) 100%);
   padding: 10px 0;
-  margin : 0;
-  border-radius:  0 0 10px 10px ;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
 }
 /* ===== FOOTER =====*/
 .footer {
@@ -438,7 +450,7 @@ img {
 }
 
 .footer__title {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: var(--mb-1);
 }
 .footer__social {
@@ -453,6 +465,25 @@ img {
   color: #eaf1f3;
   transform: scale(1.1);
 }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.footer .row {
+  padding: 50px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+span.timeline-text {
+  font-size: 16px;
+  line-height: 25px;
+  color: #ededee;
+  margin: 0;
+}
 
 /* experience */
 
@@ -464,7 +495,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-.row {
+#experience .row {
   display: flex;
   display: -ms-flexbox;
   flex-wrap: wrap;
