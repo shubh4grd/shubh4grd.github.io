@@ -298,75 +298,129 @@ img {
 }
 
 /* ===== SKILLS =====*/
-.skills__container {
-  row-gap: 2rem;
-  text-align: center;
+
+/* Slider start */
+/* Slider */
+.slick-slide {
+  margin: 0px 20px;
 }
-.skills__subtitle {
-  margin-bottom: 0;
+.slick-slide .circle {
+  background: rgb(41, 40, 49);
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+  display: flex; /* or inline-flex */
+  align-items: center; 
+  justify-content: center;
 }
-.skills__data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.slick-slide img {
+  width: 100%;
+}
+.slick-slider
+{
   position: relative;
-  font-weight: var(--font-semi);
-  padding: 0.5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
 }
-.skills__icon {
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
-}
-.skills__names {
-  display: flex;
-  align-items: center;
-}
-.skills__bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: 0.25rem;
-  border-radius: 0.5rem;
-  z-index: var(--z-back);
-}
-.skills__html {
-  width: 95%;
-}
-.skills__css {
-  width: 94%;
-}
-.skills__js {
-  width: 65%;
-}
-.skills__react {
-  width: 50%;
-}
-.skills__angular {
-  width: 60%;
-}
-.skills__img {
-  justify-self: center;
+.slick-list
+{
+  position: relative;
+  display: block;
   overflow: hidden;
-  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
-  margin-top: 2rem;
+  margin: 0;
+  padding: 0;
 }
-.skills__img img {
-  width: 500px;
-  border-radius: 0.5rem;
+.slick-list:focus
+{
+  outline: none;
 }
-.skills__img {
-  transition: 1s;
+.slick-list.dragging
+{
   cursor: pointer;
+  cursor: hand;
 }
-.skills__img:hover {
-  transform: scale(1.1);
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
+.slick-track
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+  display: table;
+  content: '';
+}
+.slick-track:after
+{
+  clear: both;
+}
+.slick-loading .slick-track
+{
+  visibility: hidden;
+}
+.slick-slide
+{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+  float: right;
+}
+.slick-slide img
+{
+  display: block;
+}
+.slick-slide.slick-loading img
+{
+  display: none;
+}
+.slick-slide.dragging img
+{
+  pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+  display: block;
+}
+.slick-loading .slick-slide
+{
+  visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider end */
+
 
 /* ===== WORK =====*/
 .work__container {
@@ -384,7 +438,6 @@ img {
   height: auto;
   border-radius: 10px 10px 0 0;
 }
-
 .projectBox {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
@@ -444,7 +497,6 @@ img {
 .footer {
   background: -webkit-linear-gradient(left, #015d79 0%, rgb(1, 29, 41) 100%);
   text-align: center;
-  font-weight: var(--font-semi);
   padding: 1rem 0;
   color: #d5b981;
 }
@@ -470,6 +522,13 @@ img {
   width: 33.33%;
   padding: 10px;
 }
+.footer-msg{
+  font-size: 10px;
+  line-height: 25px;
+  color: #ededee;
+  margin: 0;
+}
+
 .footer .row {
   padding: 50px;
 }
@@ -483,6 +542,17 @@ span.timeline-text {
   line-height: 25px;
   color: #ededee;
   margin: 0;
+}
+/* ===== MEDIA QUERIES=====*/
+
+@media (max-width: 740px) {
+  .column {
+    width: 100%;
+    padding: 10px;
+  }
+  .footer .row {
+    padding: 0;
+  }
 }
 
 /* experience */
