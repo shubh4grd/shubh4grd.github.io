@@ -299,10 +299,13 @@ img {
 
 /* ===== SKILLS =====*/
 
+#skills {
+  padding-bottom: 0rem;
+}
+
 /* Slider start */
-/* Slider */
 .slick-slide {
-  margin: 0px 20px;
+  margin: 4rem 2rem 0 2rem;
 }
 .slick-slide .circle {
   background: rgb(41, 40, 49);
@@ -312,9 +315,6 @@ img {
   display: flex; /* or inline-flex */
   align-items: center; 
   justify-content: center;
-}
-.slick-slide img {
-  width: 100%;
 }
 .slick-slider
 {
@@ -388,18 +388,6 @@ img {
 [dir='rtl'] .slick-slide
 {
   float: right;
-}
-.slick-slide img
-{
-  display: block;
-}
-.slick-slide.slick-loading img
-{
-  display: none;
-}
-.slick-slide.dragging img
-{
-  pointer-events: none;
 }
 .slick-initialized .slick-slide
 {
@@ -552,6 +540,9 @@ span.timeline-text {
   }
   .footer .row {
     padding: 0;
+  }
+  .home__data .button{
+    margin-right: 0;
   }
 }
 
