@@ -9,7 +9,7 @@
 /*===== Colores =====*/
 :root {
   --first-color: #474b4f;
-  --second-color: #6b6e70;
+  --second-color: #a3a6a8;
   --third-color: #32b8c2;
   --forth-color: #222629;
   --fifth-color: #1e3138;
@@ -696,6 +696,9 @@ span.timeline-text {
     display: none;
   }
   .nav__link {
+    color: var(--third-color);
+  }
+  .name_color{
     color: var(--third-color);
   }
 

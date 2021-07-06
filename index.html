@@ -1,192 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="shortcut icon" href="/assets/img/profile1.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="shortcut icon" href="/assets/img/sb-logo.png" type="image/png" />
+    <link rel="stylesheet"vhref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"/>
     <!--  -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
     <title>Portfolio | SHUBHAM KUMAR BURMAN</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--===== HEADER =====-->
     <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo"><span>Shubham Kumar Burman</span></a>
-            </div>
+      <nav class="nav bd-grid">
+        <div style="display: flex">
+          <a href="#" class="nav__logo"><img width="11%" src="/assets/img/sb-logo.png" alt="logo"/></a>
+        </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link
-                                active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                </ul>
-            </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">Experience</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+          </ul>
+        </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
 
     <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Shubham</span><span><br>Designer
-                        Developer<br>Programmer</span></h1>
-                <a href="mailto:shubhamburman09@gmail.com" class="button">Say
-                    Hey</a>
-                <a href="https://drive.google.com/file/d/1NU3FzpJNk0NXhi-JGVch1n3Lvfq4aLNc/view?usp=sharing"
-                    target="_blank" class="button"><i class="fa fa-download"></i> &nbsp; Resume</a>
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">Hi,<br />I'am <span class="home__title-color">Shubham</span><span><br />Student, Developer,<br />Programmer</span></h1>
+          <a href="mailto:shubhamburman09@gmail.com" class="button">Say Hey</a>
+          <a href="https://drive.google.com/file/d/1NU3FzpJNk0NXhi-JGVch1n3Lvfq4aLNc/view?usp=sharing" target="_blank" class="button"><i class="fa fa-download"></i> &nbsp; Resume</a>
+        </div>
+
+        <div class="home__social">
+          <a href="https://www.linkedin.com/in/shubham-kumar-burman" class="home__social-icon" ><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/shubh4grd" class="home__social-icon"><i class="bx bxl-instagram"></i></a>
+          <a href="https://github.com/shubh4grd" class="home__social-icon"><i class="bx bxl-github"></i></a>
+        </div>
+
+        <div class="home__img">
+          <img src="assets/img/profile1.png" alt="shubhDp" />
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/about.png" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">
+              I'am <span class="name_color">Shubham</span>
+            </h2>
+            <p class="about__text">
+              I have started my journey towards programming when I was in class
+              11th. But I was not able to give more time due to a lot of exams
+              other than boards one. Due to COVID 19, I got some time to study
+              the computer then I increased my knowledge regarding programming.
+              I made a plan and touch wood I am following that plan nicely. I
+              have learned a lot of things just in 1.5 months. I want to just
+              say one thing that day by day I am felling in love with
+              programming. I have just learned some languages and want to learn
+              many more and want to get a lot of knowledge.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills__container">
+          <section class="customer-logos slider">
+            <div class="slide">
+              <div class="circle">
+                <p class="skill-logo">&lt;HTML/&gt;</p>
+              </div>
             </div>
-
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/shubham-kumar-burman" class="home__social-icon"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://www.instagram.com/shubh4grd" class="home__social-icon"><i
-                        class='bx bxl-instagram'></i></a>
-                <a href="https://github.com/shubh4grd" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            <div class="slide">
+              <div class="circle">
+                <p class="skill-logo">.CSS{}</p>
+              </div>
             </div>
-
-            <div class="home__img">
-                <img src="assets/img/profile1.png" alt="shubhDp">
+            <div class="slide">
+              <div class="circle">
+                <p class="skill-logo">$JavaScript</p>
+              </div>
             </div>
-        </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/work3.png" alt="">
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">I'am Shubham</h2>
-                    <p class="about__text">I have started my journey towards
-                        programming when I was in class 11th. But I was not
-                        able to give more time due to a lot of exams other
-                        than boards one. Due to COVID 19, I got some time to
-                        study the computer then I increased my knowledge
-                        regarding programming. I made a plan and touch wood
-                        I am following that plan nicely. I have learned a
-                        lot of things just in 1.5 months. I want to just say
-                        one thing that day
-                        by day I am felling in love with programming. I have
-                        just learned some languages and want to learn many
-                        more and want to get a lot of knowledge. </p>
-                </div>
+            <div class="slide">
+              <div class="circle">
+                <p class="skill-logo">Angular</p>
+              </div>
             </div>
-        </section>
-
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills__container">
-                <section class="customer-logos slider">
-                    <div class="slide">
-                        <div class="circle">
-                            <p class="skill-logo">
-                                &lt;HTML/&gt;
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="circle">
-                            <p class="skill-logo">.CSS{}</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="circle">
-                            <p class="skill-logo">$JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="circle">
-                            <p class="skill-logo">Angular</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="circle">
-                            <p class="skill-logo">React</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="circle">
-                            <p class="skill-logo">WordPress</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="circle">
-                            <p class="skill-logo">Bootstrap</p>
-                        </div>
-                    </div>
-                </section>
+            <div class="slide">
+              <div class="circle">
+                <p class="skill-logo">React</p>
+              </div>
             </div>
-
-        </section>
-        <!--===== Experience =====-->
-        <section class="work section" id="experience">
-            <div class="experience__container bd-grid">
-                <div class="row">
-                    <div class="about-content padd-15">
-                        <div class="row">
-                            <div class="education padd-15">
-                                <h2 class="section-title">Education</h2>
-                                <div class="timeline-box padd-15">
-                                    <div class="row">
-                                        <div class="timeline
-                                                shadow-dark">
-                                            <!-- TimeLine Item -->
-                                            <div class="timeline-item">
-                                                <div class="circle-dot">
-                                                </div>
-                                                <h6 class="timeline-date">
-                                                    <i class="fa
-                                                            fa-calendar"></i>
-                                                    2018-2022
-                                                </h6>
-                                                <h4 class="timeline-title">Sanskriti
-                                                    University, Mathura,
-                                                    Uttar Pradesh</h4>
-                                                <p class="timeline-text">Bachelor
-                                                    of Technology,
-                                                    Computer Science
-                                                    & Engineering.
-                                                </p>
-                                            </div>
-                                            <!-- TimeLine Item End -->
-                                            <!-- TimeLine Item -->
-                                            <div class="timeline-item">
-                                                <div class="circle-dot">
-                                                </div>
-                                                <h6 class="timeline-date">
-                                                    <i class="fa
-                                                            fa-calendar"></i>
-                                                    2016-2018
-                                                </h6>
-                                                <h4 class="timeline-title">BNS
-                                                    DAV Public School,
-                                                    Giridih, Jharkhand</h4>
-                                                <p class="timeline-text">Computer
-                                                    Science &
-                                                    Mathematics.
-                                                    <!-- <br>
+            <div class="slide">
+              <div class="circle">
+                <p class="skill-logo">WordPress</p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="circle">
+                <p class="skill-logo">Bootstrap</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!--===== Experience =====-->
+      <section class="work section" id="experience">
+        <div class="experience__container bd-grid">
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="education padd-15">
+                  <h2 class="section-title">Education</h2>
+                  <div class="timeline-box padd-15">
+                    <div class="row">
+                      <div class="timeline shadow-dark">
+                        <!-- TimeLine Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date"><i class="fa fa-calendar"></i>2018-2022</h6>
+                          <h4 class="timeline-title">Sanskriti University, Mathura, Uttar Pradesh</h4>
+                          <p class="timeline-text">Bachelor of Technology, Computer Science & Engineering.</p>
+                        </div>
+                        <!-- TimeLine Item End -->
+                        <!-- TimeLine Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date"><i class="fa fa-calendar"></i>2016-2018</h6>
+                          <h4 class="timeline-title">BNS DAV Public School, Giridih, Jharkhand</h4>
+                          <p class="timeline-text">Computer Science & Mathematics.
+                            <!-- <br>
                                                         Secured an
                                                         aggregate of
                                                         73.4% at All
@@ -201,65 +179,55 @@
                                                         Secondary School
                                                         Examination
                                                         (AISSE). -->
-                                                </p>
-                                            </div>
-                                            <!-- TimeLine Item End -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="education padd-15">
-                                <h2 class="section-title">Experience</h2>
-                                <!-- temporary text -->
+                          </p>
+                        </div>
+                        <!-- TimeLine Item End -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="education padd-15">
+                  <h2 class="section-title">Experience</h2>
+                  <!-- temporary text -->
 
-                                <p style="text-align: center;color:lemonchiffon;"><span
-                                        style="color: rgb(255, 60, 0); font-size: larger;">
-                                        << /span> working on this section, will update soon <span
-                                                style="color: rgb(255, 60, 0); font-size: larger;">></span></p>
+                  <p style="text-align: center; color: rgb(252, 8, 8)">
+                    working on this section, will update soon
+                  </p>
 
-                                <!-- temporary text -->
-                                <div class="timeline-box padd-15">
-                                    <div class="row">
-                                        <div class="timeline
-                                                shadow-dark">
-                                            <!-- TimeLine Item -->
-                                            <div class="timeline-item">
-                                                <div class="circle-dot">
-                                                </div>
-                                                <h6 class="timeline-date">
-                                                    <i class="fa
-                                                            fa-calendar"></i>
-                                                    Feb, 2021 - Present
-                                                </h6>
-                                                <h4 class="timeline-title">Jayswal
-                                                    Market, Dhanbad</h4>
-                                                <p class="timeline-text">Worked
-                                                    with
-                                                    technologies
-                                                    like HTML, CSS,
-                                                    JavaScript,
-                                                    WordPress,
-                                                    Bootstrap, etc.
-                                                    <br>
-                                                    Made e-commerce
-                                                    websites using
-                                                    WordPress and
-                                                    also using
-                                                    JavaScript.
-                                                </p>
-                                            </div>
-                                            <!-- TimeLine Item End -->
-                                            <!-- TimeLine Item -->
-                                            <div class="timeline-item">
-                                                <div class="circle-dot">
-                                                </div>
-                                                <h6 class="timeline-date">
-                                                    <i class="fa
-                                                            fa-calendar"></i>
-                                                    Jan, 2021 - Present
-                                                </h6>
-                                                <h4 class="timeline-title">Anu Computer Consultancy, Pune</h4>
-                                                <!-- <p
+                  <!-- temporary text -->
+                  <div class="timeline-box padd-15">
+                    <div class="row">
+                      <div class="timeline shadow-dark">
+                        <!-- TimeLine Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i>
+                            Feb, 2021 - Present
+                          </h6>
+                          <h4 class="timeline-title">
+                            Jayswal Market, Dhanbad
+                          </h4>
+                          <p class="timeline-text">
+                            Worked with technologies like HTML, CSS, JavaScript,
+                            WordPress, Bootstrap, etc.
+                            <br />
+                            Made e-commerce websites using WordPress and also
+                            using JavaScript.
+                          </p>
+                        </div>
+                        <!-- TimeLine Item End -->
+                        <!-- TimeLine Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i>
+                            Jan, 2021 - Present
+                          </h6>
+                          <h4 class="timeline-title">
+                            Anu Computer Consultancy, Pune
+                          </h4>
+                          <!-- <p
                                                         class="timeline-text">Worked
                                                         with
                                                         technologies
@@ -274,19 +242,17 @@
                                                         also using
                                                         JavaScript.
                                                     </p> -->
-                                            </div>
-                                            <!-- TimeLine Item End -->
-                                            <!-- TimeLine Item Start-->
-                                            <div class="timeline-item">
-                                                <div class="circle-dot">
-                                                </div>
-                                                <h6 class="timeline-date">
-                                                    <i class="fa
-                                                            fa-calendar"></i>
-                                                    Oct, 2020 - Nov, 2020
-                                                </h6>
-                                                <h4 class="timeline-title">The Spark Foundation</h4>
-                                                <!-- <p
+                        </div>
+                        <!-- TimeLine Item End -->
+                        <!-- TimeLine Item Start-->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i>
+                            Oct, 2020 - Nov, 2020
+                          </h6>
+                          <h4 class="timeline-title">The Spark Foundation</h4>
+                          <!-- <p
                                                         class="timeline-text">Worked
                                                         with
                                                         technologies
@@ -301,198 +267,261 @@
                                                         also using
                                                         JavaScript.
                                                     </p> -->
-                                            </div>
-                                            <!-- TimeLine Item End -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+                        <!-- TimeLine Item End -->
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!--===== WORK =====-->
-        <section class="work section" id="projects">
-            <h2 class="section-title">Projects</h2>
+      <!--===== WORK =====-->
+      <section class="work section" id="projects">
+        <h2 class="section-title">Projects</h2>
 
-            <!-- temporary text -->
+        <!-- temporary text -->
 
-            <p style="text-align: center;color:lemonchiffon;"><span style="color: rgb(255, 60, 0); font-size: larger;">
-                    << /span> working on this section, will update soon <span
-                            style="color: rgb(255, 60, 0); font-size: larger;">></span></p>
+        <p style="text-align: center; color: rgb(252, 8, 8)">
+          working on this section, will update soon
+        </p>
 
-            <!-- temporary text -->
+        <!-- temporary text -->
 
-            <div class="work__container bd-grid">
-                <!-- work item start -->
+        <div class="work__container bd-grid">
+          <!-- work item start -->
 
-                <div class="projectBox">
-                    <div class="container">
-                        <img src="./assets/img/blog.jpg" alt="Avatar" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <div class="aboutProject">
-                                    <!-- <p>Lorem ipsum dolor sit amet
+          <div class="projectBox">
+            <div class="container">
+              <img src="./assets/img/blog.jpg" alt="Avatar" class="image" />
+              <div class="overlay">
+                <div class="text">
+                  <div class="aboutProject">
+                    <!-- <p>Lorem ipsum dolor sit amet
                                         consectetur adipisicing elit.
                                         Saepe
                                         veniam, suscipit, libero dolorem</p> -->
-                                </div>
-                                <div class="button-box">
-                                    <a class="button" href="https://shubh4grd.github.io/projectWebsite/"
-                                        target="_blank">Live Demo</a>
-                                    <a class="button" href="https://github.com/shubh4grd/projectWebsite"
-                                        target="_blank">View Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectTitle">
-                        <h3>ScriBBler</h3>
-                    </div>
+                  </div>
+                  <div class="button-box">
+                    <a
+                      class="button"
+                      href="https://shubh4grd.github.io/projectWebsite/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                    <a
+                      class="button"
+                      href="https://github.com/shubh4grd/projectWebsite"
+                      target="_blank"
+                      >View Code</a
+                    >
+                  </div>
                 </div>
-
-                <!-- work item start -->
-
-                <div class="projectBox">
-                    <div class="container">
-                        <img src="./assets/img/portfolio.jpg" alt="Avatar" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <div class="aboutProject">
-                                    <!-- <p>Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit.
-                                        Saepe
-                                        veniam, suscipit, libero dolorem</p> -->
-                                </div>
-                                <div class="button-box">
-                                    <a class="button" href="https://shubh4grd.github.io/" target="_blank">Live Demo</a>
-                                    <a class="button" href="https://github.com/shubh4grd/shubh4grd.github.io"
-                                        target="_blank">View Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectTitle">
-                        <h3>Portfolio Website</h3>
-                    </div>
-                </div>
-
-                <!-- work item start -->
-
-                <div class="projectBox">
-                    <div class="container">
-                        <img src="./assets/img/calculator.jpg" alt="Avatar" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <div class="aboutProject">
-                                    <!-- <p>Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit.
-                                        Saepe
-                                        veniam, suscipit, libero dolorem</p> -->
-                                </div>
-                                <div class="button-box">
-                                    <a class="button" href="https://shubh4grd.github.io/calculator-UI/"
-                                        target="_blank">Live Demo</a>
-                                    <a class="button" href="https://github.com/shubh4grd/calculator-UI"
-                                        target="_blank">View Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectTitle">
-                        <h3>JavaScript-Calculator</h3>
-                    </div>
-                </div>
-
-                <!-- work item start -->
-
-                <div class="projectBox">
-                    <div class="container">
-                        <img src="./assets/img/clock.jpg" alt="Avatar" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <div class="aboutProject">
-                                    <!-- <p>Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit.
-                                        Saepe
-                                        veniam, suscipit, libero dolorem</p> -->
-                                </div>
-                                <div class="button-box">
-                                    <a class="button" href="https://shubh4grd.github.io/Dark-themed-clock-UI-design/"
-                                        target="_blank">Live Demo</a>
-                                    <a class="button" href="https://github.com/shubh4grd/Dark-themed-clock-UI-design"
-                                        target="_blank">View Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectTitle">
-                        <h3>Analog Clock</h3>
-                    </div>
-                </div>
-
-                <!-- work item start -->
-
-                <div class="projectBox">
-                    <div class="container">
-                        <img src="./assets/img/prfileCard.jpg" alt="Avatar" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <div class="aboutProject">
-                                    <!-- <p>Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit.
-                                        Saepe
-                                        veniam, suscipit, libero dolorem</p> -->
-                                </div>
-                                <div class="button-box">
-                                    <a class="button" href="https://shubh4grd.github.io/profile-card/"
-                                        target="_blank">Live Demo</a>
-                                    <a class="button" href="https://github.com/shubh4grd/profile-card"
-                                        target="_blank">View Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectTitle">
-                        <h3>Profile Card</h3>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+            <div class="projectTitle">
+              <h3>ScriBBler</h3>
+            </div>
+          </div>
+
+          <!-- work item start -->
+
+          <div class="projectBox">
+            <div class="container">
+              <img
+                src="./assets/img/portfolio.jpg"
+                alt="Avatar"
+                class="image"
+              />
+              <div class="overlay">
+                <div class="text">
+                  <div class="aboutProject">
+                    <!-- <p>Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.
+                                        Saepe
+                                        veniam, suscipit, libero dolorem</p> -->
+                  </div>
+                  <div class="button-box">
+                    <a
+                      class="button"
+                      href="https://shubh4grd.github.io/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                    <a
+                      class="button"
+                      href="https://github.com/shubh4grd/shubh4grd.github.io"
+                      target="_blank"
+                      >View Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projectTitle">
+              <h3>Portfolio Website</h3>
+            </div>
+          </div>
+
+          <!-- work item start -->
+
+          <div class="projectBox">
+            <div class="container">
+              <img
+                src="./assets/img/calculator.jpg"
+                alt="Avatar"
+                class="image"
+              />
+              <div class="overlay">
+                <div class="text">
+                  <div class="aboutProject">
+                    <!-- <p>Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.
+                                        Saepe
+                                        veniam, suscipit, libero dolorem</p> -->
+                  </div>
+                  <div class="button-box">
+                    <a
+                      class="button"
+                      href="https://shubh4grd.github.io/calculator-UI/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                    <a
+                      class="button"
+                      href="https://github.com/shubh4grd/calculator-UI"
+                      target="_blank"
+                      >View Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projectTitle">
+              <h3>JavaScript-Calculator</h3>
+            </div>
+          </div>
+
+          <!-- work item start -->
+
+          <div class="projectBox">
+            <div class="container">
+              <img src="./assets/img/clock.jpg" alt="Avatar" class="image" />
+              <div class="overlay">
+                <div class="text">
+                  <div class="aboutProject">
+                    <!-- <p>Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.
+                                        Saepe
+                                        veniam, suscipit, libero dolorem</p> -->
+                  </div>
+                  <div class="button-box">
+                    <a
+                      class="button"
+                      href="https://shubh4grd.github.io/Dark-themed-clock-UI-design/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                    <a
+                      class="button"
+                      href="https://github.com/shubh4grd/Dark-themed-clock-UI-design"
+                      target="_blank"
+                      >View Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projectTitle">
+              <h3>Analog Clock</h3>
+            </div>
+          </div>
+
+          <!-- work item start -->
+
+          <div class="projectBox">
+            <div class="container">
+              <img
+                src="./assets/img/prfileCard.jpg"
+                alt="Avatar"
+                class="image"
+              />
+              <div class="overlay">
+                <div class="text">
+                  <div class="aboutProject">
+                    <!-- <p>Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.
+                                        Saepe
+                                        veniam, suscipit, libero dolorem</p> -->
+                  </div>
+                  <div class="button-box">
+                    <a
+                      class="button"
+                      href="https://shubh4grd.github.io/profile-card/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                    <a
+                      class="button"
+                      href="https://github.com/shubh4grd/profile-card"
+                      target="_blank"
+                      >View Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projectTitle">
+              <h3>Profile Card</h3>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--===== FOOTER =====-->
     <footer class="footer">
-        <div class="row">
-            <div class="column">
-                <p>&#169; No copyright issues. <br>
-                    <span class="footer-msg">Feel free to copy. If you need any help, ping me !</span>
-                </p>
-            </div>
-            <div class="column">
-                <p>Made with &nbsp;<i class="fa fa-heart" style="font-size:20px;color:red"></i>&nbsp; in India</p>
-                <p class="footer__title">Shubham Kumar Burman</p>
-            </div>
-            <div class="footer__social column">
-                <p>You can find me everywhere</p>
-                <a href="https://www.linkedin.com/in/shubham-kumar-burman" class="footer__icon"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://www.instagram.com/shubh4grd" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-                <a href="https://twitter.com/Shubh4grd" class="footer__icon"><i class='bx bxl-twitter'></i></a>
-                <a href="https://github.com/shubh4grd" class="footer__icon"><i class='bx bxl-github'></i></a>
-            </div>
+      <div class="row">
+        <div class="column">
+          <p>
+            &#169; No copyright issues. <br />
+            <span class="footer-msg"
+              >Feel free to copy. If you need any help, ping me !</span
+            >
+          </p>
         </div>
-        <p class="footer-msg">Last Updated - 13 May, 2021</p>
+        <div class="column">
+          <p>Made with <i class="bx bx-heart" style="font-size: 20px; color: red;"></i> in India</p>
+          <p class="footer__title">Shubham Kumar Burman</p>
+        </div>
+        <div class="footer__social column">
+          <p>You can find me everywhere</p>
+          <a
+            href="https://www.linkedin.com/in/shubham-kumar-burman"
+            class="footer__icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/shubh4grd" class="footer__icon"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://twitter.com/Shubh4grd" class="footer__icon"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://github.com/shubh4grd" class="footer__icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+      </div>
+      <p class="footer-msg">Last Updated - 06 July, 2021</p>
     </footer>
-
 
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
