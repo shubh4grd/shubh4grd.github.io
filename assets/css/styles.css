@@ -8,9 +8,9 @@
 
 /*===== Colores =====*/
 :root {
-  --first-color: #474b4f;
-  --second-color: #a3a6a8;
-  --third-color: #32b8c2;
+  --first-color: #666d6e;
+  --second-color: #cfdbdb;
+  --third-color: #59dbe4;
   --forth-color: #222629;
   --fifth-color: #1e3138;
 
@@ -239,7 +239,7 @@ img {
 .home__img {
   position: absolute;
   right: 10%;
-  bottom: 1%;
+  bottom: 10%;
   width: 218px;
   overflow: hidden;
   box-shadow: 0 4px 25px rgb(71, 75, 79);
@@ -297,6 +297,31 @@ img {
 
 #skills {
   padding-bottom: 0rem;
+}
+.circle {
+  border: 2px solid var(--first-color);
+  position: relative;
+  margin: 0 0 1.5rem;
+}
+
+.circle:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid var(--second-color);
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  animation: wave 1.5s infinite linear;
+}
+
+@keyframes wave {
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
 }
 
 /* Slider start */
@@ -459,9 +484,21 @@ img {
 }
 
 .work__container .text {
-  margin: 10%;
+  margin: 5%;
   justify-content: center;
-  align-items: center;
+}
+.aboutProject{
+  font-size: 12px;
+  text-align: left;
+}
+.text {
+  display: flex;
+}
+
+.text .button-box {
+  position: absolute;
+  bottom: 0;
+  margin: 2%;
 }
 .work__container .button {
   background-color: var(--fifth-color);
@@ -471,7 +508,7 @@ img {
   font-weight: 100;
   border-radius: 0.5rem;
   font-size: small;
-  margin: 5% 2.5%;
+  /* margin: 5% 2.5%; */
 }
 .work__container .button:hover {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
