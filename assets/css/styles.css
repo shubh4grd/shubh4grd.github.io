@@ -638,11 +638,16 @@ span.timeline-text {
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: capitalize;
-  color: var(--second-color);
+  color: var(--first-color);
 }
 .about-content .timeline .timeline-text {
   font-size: 16px;
   line-height: 25px;
+  color: var(--second-color);
+  margin: 0;
+}
+.about-content .timeline .timeline-role {
+  font-size: 14px;
   color: var(--second-color);
   margin: 0;
 }
