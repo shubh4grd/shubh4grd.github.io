@@ -179,7 +179,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: var(--third-color);
 }
 .nav__logo {
   color: var(--second-color);
@@ -199,7 +199,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--second-color);
+  background-color: var(--first-color);
 }
 
 /*=== Show menu ===*/
@@ -256,8 +256,8 @@ img {
 /*BUTTONS*/
 .home__data .button {
   display: inline-block;
-  background-color: var(--first-color);
-  color: var(--third-color);
+  background-color: var(--fifth-color);
+  color: var(--first-color);
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
@@ -326,7 +326,7 @@ img {
 
 /* Slider start */
 .slick-slide {
-  margin: 4rem 2rem 0 2rem;
+  margin: 4rem 2rem 2rem 2rem;
 }
 .slick-slide .circle {
   background: var(--first-color);
@@ -738,7 +738,7 @@ span.timeline-text {
     display: none;
   }
   .nav__link {
-    color: var(--third-color);
+    color: var(--first-color);
   }
   .name_color{
     color: var(--third-color);
