@@ -524,6 +524,7 @@ img {
 }
 /* ===== FOOTER =====*/
 .footer {
+  position: relative;
   background: var(--fifth-color);
   text-align: center;
   padding: 1rem 0;
@@ -572,6 +573,12 @@ span.timeline-text {
   line-height: 25px;
   color: var(--first-color);
   margin: 0;
+}
+.hit-counter{  
+  position:absolute;
+  bottom:0;
+  left:0;
+  margin: 0 0 1rem 1rem;
 }
 /* ===== MEDIA QUERIES=====*/
 
