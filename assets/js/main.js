@@ -65,7 +65,7 @@ sr.reveal('.home__img',{delay: 400});
 sr.reveal('.home__social-icon',{ interval: 200}); 
 
 /*SCROLL ABOUT*/
-sr.reveal('.about__code',{}); 
+sr.reveal('.about__code-wrapper',{}); 
 sr.reveal('.about__subtitle',{delay: 400}); 
 sr.reveal('.about__text',{delay: 400}); 
 
